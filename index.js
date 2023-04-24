@@ -7,6 +7,8 @@ const fs = require('fs');
 const ytdl = require('ytdl-core');
 const ytsr = require('ytsr');
 const AWS = require('aws-sdk');
+
+
 var ffmpeg = require('fluent-ffmpeg');
 var morgan = require('morgan');
 require('dotenv').config();
@@ -25,7 +27,7 @@ app.get('/', (req, res) =>  {
   res.sendFile(__dirname + '/');
 });
 const AWS_REGION = 'eu-central-1';
-const s3 = new AWS.S3({ region: AWS_REGION, accessKeyId: 'YOURKEY', secretAccessKey: 'YOURSECRET' });
+const s3 = new AWS.S3({ region: AWS_REGION, accessKeyId: 'AKIATGKGMFZRAQMFLHAH', secretAccessKey: 'gRdFpg2//PNOS79/ewYuoDaZ0Li4mn2sVRsqDR/A' });
 
 
 app.get('/status', (req, res) => {
